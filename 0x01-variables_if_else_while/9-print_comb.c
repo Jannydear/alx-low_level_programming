@@ -1,4 +1,4 @@
-#iclude <stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  * Description: 'print comb of numbers'

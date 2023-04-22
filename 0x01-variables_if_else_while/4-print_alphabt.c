@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lower case followed by a new line, except q and e
+ * main - program entry point
  * Return: Always 0
  */
 int main(void)
 {
-	char la;
+	char i;
 
-	for (la = 'a'; la <= 'z'; la++)
+	for (i =  'a'; i <= 'z'; i++)
 	{
-		if (la !== 'e' && la !== 'q')
-			putchar(la);
+		if (i == 'e' || i == 'q')
+			putchar(i);
 	}
 
 	putchar('\n');

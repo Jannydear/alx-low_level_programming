@@ -1,20 +1,23 @@
 #include <stdio.h>
-
 /**
- * main - program entry point
+ * main - Entry point
+ * Description 'print alphabets except q band e'
  * Return: Always 0
  */
 int main(void)
 {
-	char i;
+	int n = 97;
 
-	for (i =  'a'; i <= 'z'; i++)
+	while (n <= 122)
 	{
-		if (i == 'e' || i == 'q')
-			putchar(i);
+		if (n == 101 || n == 113)
+		{
+			n++;
+			continue;
+		}
+		putchar(n);
+		n++;
 	}
-
 	putchar('\n');
-
-	return (0)
+	return (0);
 }
